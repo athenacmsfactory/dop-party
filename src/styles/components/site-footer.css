@@ -1,0 +1,126 @@
+/* ─── Site Footer ───
+   Licht contactblok + donkere sitemap-band. */
+
+.site-footer {
+  background: var(--c-white);
+}
+
+.site-footer__top {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: center;
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.site-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--c-ink);
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.site-footer__brand svg {
+  width: 38px;
+  height: 38px;
+}
+
+.site-footer address {
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--c-slate);
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.site-footer__social a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-pill);
+  background: var(--c-green);
+  color: var(--c-white);
+  transition: background var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+
+.site-footer__social a:hover {
+  background: var(--c-green-dark);
+  transform: translateY(-2px);
+}
+
+.site-footer__social svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.site-footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding-block: 1rem;
+  border-top: 1px solid var(--c-line);
+  font-size: var(--fs-micro);
+  color: #8a8f94;
+}
+
+.site-footer__legal a {
+  color: #8a8f94;
+}
+
+.site-footer__legal a:hover {
+  color: var(--c-green);
+}
+
+/* ── Sitemap-band ── */
+.sitemap {
+  background: var(--c-ink);
+  color: rgb(255 255 255 / 0.75);
+}
+
+.sitemap__inner {
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding-block: clamp(2rem, 4vw, 3rem);
+}
+
+.sitemap h4 {
+  margin: 0;
+  color: var(--c-white);
+  font-size: var(--fs-small);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+.sitemap ul {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.sitemap a {
+  color: rgb(255 255 255 / 0.7);
+  font-size: var(--fs-small);
+}
+
+.sitemap a:hover {
+  color: var(--c-white);
+}
+
+@media (max-width: 860px) {
+  .site-footer__top {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .sitemap__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}

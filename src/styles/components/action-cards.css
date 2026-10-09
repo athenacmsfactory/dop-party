@@ -1,0 +1,57 @@
+/* ─── Action Cards ───
+   Tegels met titel, korte tekst en outline-CTA. */
+
+.action-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--c-white);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-card);
+  box-shadow: var(--sh-card);
+  transition: transform var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease);
+}
+
+.action-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sh-pop);
+}
+
+.action-card__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.1rem;
+  border-radius: 14px;
+  background: var(--c-green-soft);
+  color: var(--c-green);
+}
+
+.action-card__icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+}
+
+.action-card h3 {
+  margin-bottom: 0.35em;
+}
+
+.action-card p {
+  flex: 1;
+  color: var(--c-slate);
+}
+
+.action-card .btn {
+  margin-top: 0.75rem;
+}

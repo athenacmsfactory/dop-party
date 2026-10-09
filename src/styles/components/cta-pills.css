@@ -1,0 +1,58 @@
+/* ─── CTA Pills ───
+   Rij afgeronde knoppen: primaire vraag-knop + outline-pills. */
+
+.cta-pills {
+  background: var(--c-off);
+  border-block: 1px solid var(--c-line);
+}
+
+.cta-pills__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  padding: 1em 1.75em;
+  border: 2px solid var(--c-line);
+  border-radius: var(--r-pill);
+  background: var(--c-white);
+  color: var(--c-slate);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease),
+    background var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+  border-color: var(--c-green);
+  color: var(--c-green);
+}
+
+.pill--primary {
+  background: var(--c-green);
+  border-color: var(--c-green);
+  color: var(--c-white);
+  border-radius: var(--r-btn);
+}
+
+.pill--primary:hover {
+  background: var(--c-green-dark);
+  border-color: var(--c-green-dark);
+  color: var(--c-white);
+}
+
+.pill svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}

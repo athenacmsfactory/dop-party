@@ -1,0 +1,51 @@
+/* ─── Vision ───
+   Twee kolommen: kop + alinea's | lijst met groene markers. */
+
+.vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+}
+
+.vision__lead {
+  font-size: var(--fs-lead);
+  font-weight: 600;
+  color: var(--c-ink);
+}
+
+.vision__list-title {
+  font-size: var(--fs-h3);
+  color: var(--c-ink);
+  margin-bottom: 0.8em;
+}
+
+.vision__list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.vision__list li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.vision__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 9px;
+  height: 9px;
+  border-radius: var(--r-pill);
+  background: var(--c-green);
+}
+
+.vision__list strong {
+  color: var(--c-ink);
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .vision { grid-template-columns: 1fr; }
+}

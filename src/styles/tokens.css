@@ -1,0 +1,51 @@
+/* ─── Design Tokens ───
+   Visuele taal geïnspireerd op dop-ovl.be (eigen implementatie).
+   Alle kleur-, type- en spacing-keuzes leven hier. */
+
+:root {
+  /* ── Kleur ── */
+  --c-green: #2b7b44;          /* primair groen */
+  --c-green-dark: #1f5c33;     /* hover / diep */
+  --c-green-soft: #e8f2ec;     /* lichte tint */
+  --c-slate: #343a40;          /* standaardtekst */
+  --c-ink: #09181b;            /* donkere panelen */
+  --c-off: #fafaf9;            /* off-white achtergrond */
+  --c-line: #e6e6e3;           /* scheidingslijnen */
+  --c-white: #ffffff;
+  --c-accent: #e2007e;         /* signaalmagenta (tags/labels) */
+
+  /* ── Typografie ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --fs-display: clamp(2.4rem, 5vw + 1rem, 4.25rem);
+  --fs-h2: clamp(1.75rem, 2.4vw + 0.8rem, 2.6rem);
+  --fs-h3: clamp(1.2rem, 1vw + 0.9rem, 1.5rem);
+  --fs-lead: clamp(1.05rem, 0.4vw + 0.95rem, 1.2rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+  --lh-tight: 1.12;
+  --lh-body: 1.65;
+  --tracking-caps: 0.08em;
+
+  /* ── Vorm ── */
+  --r-btn: 12px;
+  --r-card: 16px;
+  --r-panel: 24px;
+  --r-pill: 999px;
+
+  /* ── Schaduw ── */
+  --sh-card: 0 1px 2px rgb(9 24 27 / 0.06), 0 8px 24px rgb(9 24 27 / 0.07);
+  --sh-pop: 0 4px 12px rgb(9 24 27 / 0.12), 0 16px 40px rgb(9 24 27 / 0.14);
+  --sh-header: 0 2px 12px rgb(9 24 27 / 0.1);
+
+  /* ── Layout ── */
+  --wrap: 1200px;
+  --wrap-narrow: 920px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-y: clamp(3.5rem, 7vw, 6.5rem);
+
+  /* ── Motion ── */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 180ms;
+  --t-med: 320ms;
+}

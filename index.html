@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dop-party — herbruikbare statische design-template met utility-bar, sticky header, overlay-hero, actiekaarten, nieuwsgrid en CTA-pills. Gebouwd met Vite en vanilla HTML/CSS/JS." />
+  <meta name="theme-color" content="#2b7b44" />
+  <title>Dop-party — Template Demo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232b7b44'/><text x='16' y='23' font-size='18' font-weight='bold' text-anchor='middle' fill='%23fff'>D</text></svg>" />
+  <script type="module" src="/src/js/main.js"></script>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       UTILITY BAR
+       ════════════════════════════════════════════════ -->
+  <div class="utility-bar">
+    <div class="wrap utility-bar__inner">
+      <div class="utility-bar__group">
+        <a href="tel:+32000000000">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9z"/></svg>
+          000 00 00 00
+        </a>
+        <a href="mailto:info@voorbeeld.be">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          info@voorbeeld.be
+        </a>
+      </div>
+      <div class="utility-bar__hours">
+        <strong>Maandag – Vrijdag</strong> · 9:00 – 17:00
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════
+       SITE HEADER
+       ════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="wrap site-header__inner">
+      <a href="#" class="site-header__logo" aria-label="Dop-party home">
+        <svg class="site-header__logo-mark" viewBox="0 0 42 42" aria-hidden="true">
+          <rect width="42" height="42" rx="12" fill="#2b7b44"/>
+          <circle cx="21" cy="17" r="7" fill="#fafaf9"/>
+          <path d="M10 34c2.5-6 7-9 11-9s8.5 3 11 9" fill="#fafaf9" opacity="0.75"/>
+        </svg>
+        <span class="site-header__wordmark">Dop-party<small>Design template</small></span>
+      </a>
+
+      <nav class="site-header__nav" aria-label="Hoofdnavigatie">
+        <div class="site-header__links">
+          <a href="#over" class="site-header__link">Over ons</a>
+          <a href="#visie" class="site-header__link">Onze visie</a>
+          <a href="#nieuws" class="site-header__link">Nieuws</a>
+          <a href="#contact" class="site-header__link">Contact</a>
+        </div>
+        <a href="#contact" class="btn btn--solid">
+          Meld je aan
+          <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </nav>
+
+      <button class="site-header__burger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="site-header__mobile-nav" id="mobile-nav" aria-hidden="true" aria-label="Mobiel menu">
+      <div>
+        <a href="#over">Over ons</a>
+        <a href="#visie">Onze visie</a>
+        <a href="#nieuws">Nieuws</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Meld je aan</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════
+         HERO
+         ══════════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="/src/assets/img/hero.svg" alt="" />
+      </div>
+      <div class="wrap">
+        <div class="hero__panel reveal">
+          <h1>Regie in handen van mensen, daar gaan wij elke dag voor</h1>
+          <p>
+            Samen bouwen we aan een aanpak die vertrekt vanuit de kracht van mensen zelf —
+            met lef, partnerschap en een plan dat écht werkt.
+          </p>
+          <div class="hero__actions">
+            <a href="#over" class="btn btn--ghost-light">
+              Hoe gaan we te werk?
+              <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+            <a href="#nieuws" class="btn btn--ghost-light">Bekijk het nieuws</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SPLIT INTRO
+         ══════════════════════════════════════════════ -->
+    <section class="section" id="over">
+      <div class="wrap split-intro">
+        <div class="split-intro__text reveal">
+          <span class="eyebrow">Wie we zijn</span>
+          <p>
+            <mark>Verandering begint met een gesprek.</mark> Wij geloven dat mensen zelf de
+            expert zijn van hun eigen verhaal — onze rol is om mee te denken, deuren te openen
+            en hindernissen uit de weg te ruimen.
+          </p>
+          <p>
+            Alles wat we doen vertrekt vanuit een <strong>gedeelde gedachte</strong>: we werken
+            samen met het netwerk rondom iemand — familie, buurt, organisaties — en vertrekken
+            vanuit <strong>bestaande krachten</strong> in plaats van tekorten.
+          </p>
+          <p>
+            Concreet betekent dat <mark>samen plannen maken</mark> in plaats van plannen
+            opgelegd krijgen, met korte lijnen en één aanspreekpunt.
+          </p>
+        </div>
+
+        <div class="split-intro__panel reveal">
+          <img src="/src/assets/img/panel.svg" alt="Sfeerbeeld bij de werking" />
+          <a href="#" class="split-intro__play" aria-label="Bekijk de sfeerfilm">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         ACTION CARDS
+         ══════════════════════════════════════════════ -->
+    <section class="section section--off">
+      <div class="wrap">
+        <div class="action-cards">
+          <article class="action-card reveal">
+            <div class="action-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Het traject</h3>
+            <p>Stap voor stap werken we samen aan een plan in gewone taal, afgestemd op jouw situatie en tempo.</p>
+            <a href="#" class="btn btn--outline">
+              Kijk hier
+              <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </article>
+
+          <article class="action-card reveal">
+            <div class="action-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Getuigenis</h3>
+            <p>Lees hoe anderen hun weg vonden via het traject — verhalen van herstel, veerkracht en nieuwe kansen.</p>
+            <a href="#" class="btn btn--outline">
+              Kijk hier
+              <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </article>
+
+          <article class="action-card reveal">
+            <div class="action-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Netwerk</h3>
+            <p>Organisaties en vrijwilligers die meewerken aan maatwerk, thuis in de buurt en dicht bij de mensen.</p>
+            <a href="#" class="btn btn--outline">
+              Kijk hier
+              <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         VISION
+         ══════════════════════════════════════════════ -->
+    <section class="section" id="visie">
+      <div class="wrap vision">
+        <div class="reveal">
+          <span class="eyebrow">Wat is onze visie?</span>
+          <h2>Waar staan we voor?</h2>
+          <p class="vision__lead">
+            Wij streven naar een maatschappij waarin iedereen meetelt en het verschil mag
+            bestaan.
+          </p>
+          <p>
+            We vertrekken vanuit de gedachte dat de gewone manier van werken — met lijstjes,
+            labels en wachtlijsten — vaak niet volstaat. Daarom kiezen we voor een
+            gedeelde gedachte: samen met de mensen zelf, hun netwerk en hun omgeving
+            bouwen we aan oplossingen die passen.
+          </p>
+          <p>
+            <strong>Vermaatschappelijking</strong> is ons sleutelwoord: zorg en kansen
+            horen thuis in de gewone samenleving, niet ernaast.
+          </p>
+        </div>
+
+        <div class="reveal">
+          <h3 class="vision__list-title">Hoe nemen we dat op?</h3>
+          <ul class="vision__list">
+            <li><strong>Samen met het netwerk.</strong> We betrekken familie, buren en vrienden, want zij dragen bij aan de kwaliteit van leven.</li>
+            <li><strong>Open en uitnodigend.</strong> We luisteren eerst en vertrekken van de kern van iemands echte belang.</li>
+            <li><strong>Maatwerk boven mal.</strong> Geen standaardtraject, maar oplossingen op maat van situatie en tempo.</li>
+            <li><strong>In de buurt.</strong> We informeren over mogelijkheden en verbinden met organisaties dichtbij.</li>
+            <li><strong>Korte lijnen.</strong> Eén aanspreekpunt, snelle opvolging en heldere afspraken.</li>
+            <li><strong>Bestaande kracht als motor.</strong> We vertrekken van wat er al is, niet van wat ontbreekt.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         NEWS
+         ══════════════════════════════════════════════ -->
+    <section class="section section--off" id="nieuws">
+      <div class="wrap">
+        <div class="news__head reveal">
+          <div>
+            <span class="eyebrow">Blijf op de hoogte</span>
+            <h2>Nieuws</h2>
+          </div>
+        </div>
+
+        <div class="news__grid">
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="/src/assets/img/news-01.svg" alt="" />
+            </div>
+            <div class="news-card__body">
+              <span class="news-card__tag news-card__tag--event">Event</span>
+              <h3>Netwerkdag 'Samen in de Buurt'</h3>
+              <p>Op 12 november ontmoeten partners, vrijwilligers en bewoners elkaar voor een dag vol uitwisseling en inspiratie.</p>
+              <a href="#" class="news-card__more">
+                Lees verder
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </a>
+              <div class="news-card__date">05/10/2026</div>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="/src/assets/img/news-02.svg" alt="" />
+            </div>
+            <div class="news-card__body">
+              <span class="news-card__tag news-card__tag--vacature">Vacature</span>
+              <h3>Spontane sollicitatie begeleider</h3>
+              <p>Wil jij meewerken aan een aanpak die vertrekt vanuit de kracht van mensen? Stuur je CV en motivatie.</p>
+              <a href="#" class="news-card__more">
+                Lees verder
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </a>
+              <div class="news-card__date">24/09/2026</div>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="/src/assets/img/news-03.svg" alt="" />
+            </div>
+            <div class="news-card__body">
+              <span class="news-card__tag news-card__tag--artikel">Artikel</span>
+              <h3>Meer kwaliteit van leven in eigen buurt</h3>
+              <p>Hoe een ondersteuningsplan samen met de mensen tot stand komt — een terugblik op een jaar maatwerk.</p>
+              <a href="#" class="news-card__more">
+                Lees verder
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </a>
+              <div class="news-card__date">11/09/2026</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="news__more reveal">
+          <a href="#" class="btn btn--solid">
+            Meer nieuws
+            <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         CTA PILLS
+         ══════════════════════════════════════════════ -->
+    <section class="section cta-pills">
+      <div class="wrap cta-pills__row reveal">
+        <a href="#contact" class="pill pill--primary">
+          Heb je een vraag?
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </a>
+        <a href="#" class="pill">Folder bekijken</a>
+        <a href="#" class="pill">Onze werking</a>
+        <button class="pill" type="button">
+          Persoonlijk volgend budget
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       SITE FOOTER
+       ════════════════════════════════════════════════ -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <div class="site-footer__top">
+        <div>
+          <div class="site-footer__brand">
+            <svg viewBox="0 0 42 42" aria-hidden="true">
+              <rect width="42" height="42" rx="12" fill="#2b7b44"/>
+              <circle cx="21" cy="17" r="7" fill="#fafaf9"/>
+              <path d="M10 34c2.5-6 7-9 11-9s8.5 3 11 9" fill="#fafaf9" opacity="0.75"/>
+            </svg>
+            Dop-party
+          </div>
+        </div>
+
+        <address>
+          Voorbeeldstraat 84A<br />
+          9000 Gent<br />
+          <a href="tel:+32000000000">000 00 00 00</a> ·
+          <a href="mailto:info@voorbeeld.be">info@voorbeeld.be</a>
+        </address>
+
+        <div>
+          <a href="#" class="btn btn--outline">
+            Bepaal zelf je route
+            <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <div class="site-footer__social" style="margin-top: 1rem;">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.6v8z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 8.6H3.6V21h3.3zM5.3 3a1.9 1.9 0 1 0 0 3.9 1.9 1.9 0 0 0 0-3.9zM21 13.6c0-3.3-1.8-4.9-4.2-4.9a3.6 3.6 0 0 0-3.3 1.8V8.6H10V21h3.4v-6.1c0-1.6.3-3.1 2.3-3.1s2 1.8 2 3.2v6H21z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__legal">
+        <span>© 2026 Dop-party — template-demo</span>
+        <a href="#">Privacy &amp; cookies</a>
+        <a href="#">Toegankelijkheidsverklaring</a>
+      </div>
+    </div>
+
+    <!-- Sitemap-band -->
+    <div class="sitemap">
+      <div class="wrap sitemap__inner">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="#over">Over ons</a></li>
+          <li><a href="#visie">Onze visie</a></li>
+          <li><a href="#nieuws">Nieuws</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Hoe gaan we te werk?</a></li>
+          <li><a href="#">Meld je aan</a></li>
+          <li><a href="#">Vacatures</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Documenten</a></li>
+          <li><a href="#">Persoonlijk volgend budget</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
